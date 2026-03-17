@@ -2,6 +2,25 @@
 .description{
     color: #053F5C;
 }
+.img1{
+    padding-left: 70px;
+    padding-top: 70px;
+    animation:  logo 3s ease-in-out infinite;
+}
+@keyframes logo{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-20px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
 .hero-section {
   background: linear-gradient(135deg,#9FE7F5 0%, #ffffff 100%);
   background-size: cover;
