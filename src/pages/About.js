@@ -7,7 +7,7 @@ import '../Styles/presentation.css';
 const About = () => {
   return (
     <div>
-        <div className='page'>
+        <div className='page' id='about'>
       <section className='ofppt' >
         <div className="">
           <div className="hero-content">

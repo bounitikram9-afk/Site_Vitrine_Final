@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg " style={{background:"#053F5C"}}>
+      <nav className="navbar navbar-expand-lg fixed-top " style={{background:"#053F5C"}}>
         <div className="container">
 
           {/* LOGO */}
@@ -29,26 +29,26 @@ const Navbar = () => {
 
           {/* MENU NORMAL */}
           <div className="collapse navbar-collapse d-none d-lg-block">
-            <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto">
+  {/* Scroll داخلي */}
+  <li className="nav-item">
+    <a href="#home" className="nav-link text-white">Accueil</a>
+  </li>
+  <li className="nav-item">
+    <a href="#about" className="nav-link text-white">About</a>
+  </li>
+  <li className="nav-item">
+    <a href="#contact" className="nav-link text-white">Contact</a>
+  </li>
 
-             <li className="nav-item">
-                <Link to="/" className="nav-link text-white">Accueil</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/formations" className="nav-link text-white">Formations</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/actualites" className="nav-link text-white">Actualités</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link text-white">Contact</Link>
-              </li>
-
-
-            </ul>
+  {/* صفحات مستقلة */}
+  <li className="nav-item">
+    <a href="#formations" className="nav-link text-white">Formations</a>
+  </li>
+  <li className="nav-item">
+    <a href="#actualites" className="nav-link text-white">Actualités</a>
+  </li>
+</ul>
           </div>
 
         </div>
@@ -63,29 +63,23 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="list-unstyled p-4">
-
-         <li className="mb-3">
-          <Link to="/" className="menu-link">Accueil</Link>
-        </li>
-
-        <li className="mb-3">
-          <Link to="/presentation" className="menu-link">Présentation</Link>
-        </li>
-
-        <li className="mb-3">
-          <Link to="/formations" className="menu-link">Formations</Link>
-        </li>
-
-        <li className="mb-3">
-          <Link to="/actualites" className="menu-link">Actualités</Link>
-        </li>
-
-        <li className="mb-3">
-          <Link to="/contact" className="menu-link">Contact</Link>
-        </li>
-
-        </ul>
+       <ul className="list-unstyled p-4">
+  <li className="mb-3">
+    <a href="#home" className="menu-link">Accueil</a>
+  </li>
+  <li className="mb-3">
+    <a href="#about" className="menu-link">Présentation</a>
+  </li>
+  <li className="mb-3">
+    <a href="#contact" className="menu-link">Contact</a>
+  </li>
+  <li className="mb-3">
+    <a to="#formations" className="menu-link">Formations</a>
+  </li>
+  <li className="mb-3">
+    <Link to="/actualites" className="menu-link">Actualités</Link>
+  </li>
+</ul>
 
       </div>
     </>

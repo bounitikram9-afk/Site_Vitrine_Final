@@ -1,4 +1,6 @@
-
+.page{
+  margin: 0;
+}
 .description{
     color: #053F5C;
 }

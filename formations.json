@@ -1,0 +1,267 @@
+{
+  "formations": [
+    {
+      "id": 1,
+      "filiere": "Développement Digital - Web Full Stack",
+      "diplome": "Technicien Spécialisé",
+      "duree": "2 ans",
+      "image": "/images/dev.jpg",
+      "description": "Formation qui permet de concevoir, développer et maintenir des applications web complètes en front-end et back-end.",
+      "conditions": {
+        "niveau": "Baccalauréat ou équivalent",
+        "age": "Moins de 30 ans (33 ans pour passerelles)",
+        "specialite": "Bac scientifique ou technique recommandé",
+        "selection": "Entretien pour évaluer motivation, intérêt et niveau en français"
+      },
+      "debouches": [
+        "Développeur Web",
+        "Développeur Full Stack",
+        "Développeur Front-end",
+        "Développeur Back-end",
+        "Intégrateur Web"
+      ],
+      "competences": [
+        "Analyser les besoins du client",
+        "Développer des applications web",
+        "Tester et corriger les erreurs",
+        "Gérer des projets",
+        "Travailler en équipe",
+        "Respecter les normes de sécurité et qualité"
+      ],
+      "logiciels": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bases de données",
+        "Frameworks web",
+        "Outils collaboratifs (Git, Trello, Figma)"
+      ],
+      "langues": [
+        "Arabe",
+        "Français",
+        "Anglais technique"
+      ],
+      "heures": {
+        "technique": 1530,
+        "general": 555
+      },
+      "annees": [
+        {
+          "annee": 1,
+          "modules_generaux": [
+            {"code": "EGTS101", "nom": "Arabe", "duree": 20},
+            {"code": "EGTS102", "nom": "Français", "duree": 115},
+            {"code": "EGTS103", "nom": "Anglais technique", "duree": 50},
+            {"code": "EGTS104", "nom": "Culture entrepreneuriale", "duree": 30},
+            {"code": "EGTS105", "nom": "Compétences comportementales", "duree": 30},
+            {"code": "EGTSA106", "nom": "Culture et techniques avancées du numérique", "duree": 40}
+          ],
+          "modules_techniques": [
+            {"code": "DIA_DEV_TS-01", "nom": "Se situer au regard du métier et de la démarche de formation", "duree": 15},
+            {"code": "DIA_DEV_TS-02", "nom": "Acquérir les bases de l'algorithmique", "duree": 120},
+            {"code": "DIA_DEV_TS-03", "nom": "Programmer en orienté objet", "duree": 120},
+            {"code": "DIA_DEV_TS-04", "nom": "Développer des sites web statiques", "duree": 110},
+            {"code": "DIA_DEV_TS-05", "nom": "Programmer en JavaScript", "duree": 110},
+            {"code": "DIA_DEV_TS-06", "nom": "Manipuler des bases de données", "duree": 100},
+            {"code": "DIA_DEV_TS-07", "nom": "Développer des sites web dynamiques", "duree": 120},
+            {"code": "DIA_DEV_TS-08", "nom": "S’initier à la sécurité des systèmes d'information", "duree": 45}
+          ]
+        },
+        {
+          "annee": 2,
+          "modules_generaux": [
+            {"code": "EGTS202", "nom": "Français", "duree": 115},
+            {"code": "EGTS203", "nom": "Anglais technique", "duree": 50},
+            {"code": "EGTS204", "nom": "Culture entrepreneuriale", "duree": 45},
+            {"code": "EGTS205", "nom": "Compétences comportementales", "duree": 30},
+            {"code": "EGTSA206", "nom": "Culture et techniques avancées du numérique", "duree": 40}
+          ],
+          "modules_techniques": [
+            {"code": "DIA_DEVOWFS_TS-09", "nom": "Préparer un projet web", "duree": 60},
+            {"code": "DIA_DEVOWFS_TS-10", "nom": "Adopter l’approche agile", "duree": 100},
+            {"code": "DIA_DEVOWFS_TS-11", "nom": "Gérer les données", "duree": 100},
+            {"code": "DIA_DEVOWFS_TS-12", "nom": "Développer en front-end", "duree": 100},
+            {"code": "DIA_DEVOWFS_TS-13", "nom": "Développer en back-end", "duree": 120},
+            {"code": "DIA_DEVOWFS_TS-14", "nom": "Créer une application Cloud native", "duree": 90},
+            {"code": "DIA_DEVOWFS_TS-15", "nom": "Réaliser un projet de synthèse", "duree": 60},
+            {"code": "DIA_DEVOWFS_TS-16", "nom": "S’intégrer en milieu professionnel", "duree": 160}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "filiere": "Infographie",
+      "diplome": "Technicien Spécialisé",
+      "duree": "4 semestres",
+      "image": "/images/infographie.jpg",
+      "description": "Le Technicien Spécialisé en Infographie est un professionnel chargé de réaliser des produits de prépresse destinés à l'impression et à l'édition. Il travaille les couleurs, les typographies, les images et les mises en pages pour exprimer une identité ou faire passer une idée.",
+      "conditions": {
+        "niveau": "Baccalauréat au moins ou équivalent",
+        "age": "Au plus 30 ans (33 ans pour les passerelles)",
+        "specialite": "Toutes branches",
+        "selection": "Motivation personnelle, curiosité, sens créatif et artistique"
+      },
+      "debouches": [
+        "Directeur artistique (après 4 à 5 ans d'expérience)",
+        "Graphisme et animation 3D (formation supplémentaire)",
+        "Création d'un atelier de service"
+      ],
+      "competences": [
+        "Analyser les besoins du client",
+        "Traduire un concept ou un script en représentation visuelle",
+        "Réaliser la maquette du produit",
+        "Réaliser des éléments graphiques (logo, affiche, emballage, etc.)",
+        "Traiter des images numériques",
+        "Concevoir la mise en pages",
+        "Produire les formes imprimantes"
+      ],
+      "logiciels": [
+        "Logiciels de PAO",
+        "Outils de création 2D ou 3D",
+        "Outils pour supports print et web"
+      ],
+      "langues": [
+        "Arabe",
+        "Français",
+        "Anglais technique"
+      ],
+      "heures": {
+        "total": 2157
+      },
+      "annees": [
+        {
+          "annee": 1,
+          "modules_generaux": [
+            {"nom": "Arabe", "duree": 20},
+            {"nom": "Français", "duree": 115},
+            {"nom": "Anglais technique", "duree": 50},
+            {"nom": "Culture entrepreneuriale", "duree": 30},
+            {"nom": "Compétences comportementales", "duree": 30},
+            {"nom": "Culture et techniques avancées du numérique", "duree": 40}
+          ],
+          "modules_techniques": [
+            {"nom": "Entrepreneuriat-PIE 1", "duree": 72},
+            {"nom": "Métier et formation en imprimerie", "duree": 15},
+            {"nom": "Santé et sécurité en imprimerie", "duree": 30},
+            {"nom": "Organisation d'entreprise", "duree": 50},
+            {"nom": "Design graphique", "duree": 160},
+            {"nom": "Traitement des illustrations", "duree": 160}
+          ]
+        },
+        {
+          "annee": 2,
+          "modules_generaux": [
+            {"nom": "Français", "duree": 115},
+            {"nom": "Anglais technique", "duree": 50},
+            {"nom": "Culture entrepreneuriale", "duree": 45},
+            {"nom": "Compétences comportementales", "duree": 30},
+            {"nom": "Culture et techniques avancées du numérique", "duree": 30}
+          ],
+          "modules_techniques": [
+            {"nom": "Traitement des images", "duree": 140},
+            {"nom": "Mise en page", "duree": 140},
+            {"nom": "Gestion de la couleur", "duree": 120},
+            {"nom": "Imposition numérique", "duree": 150},
+            {"nom": "Production des formes imprimantes", "duree": 75},
+            {"nom": "Création de site Web", "duree": 60},
+            {"nom": "Projet de fin de formation", "duree": 45},
+            {"nom": "Intégration en milieu de travail", "duree": 100}
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": 3,
+      "filiere": "Production Graphique",
+      "diplome": "Technicien Spécialisé",
+      "duree": "2 ans (4 semestres)",
+      "image": "/images/production-graphique.jpg",
+      "description": "Le Technicien Spécialisé en Production Graphique est un professionnel possédant les compétences requises pour prendre en charge les tâches telles que la conduite des presses offset, le contrôle de qualité, la reliure, l'estimation, la production et la finition.",
+
+      "conditions": {
+        "niveau": "Etre titulaire du baccalauréat au moins ou équivalent ou avoir un diplôme de niveau Technicien",
+        "age": "Avoir au plus 30 ans (33 ans pour les passerelles) au 1er Septembre 2025",
+        "specialite": "Toutes branches ",
+        "selection": "Motivation personnelle, connaissance des outils de représentation, capacité d'observation, d'écoute et de travail de groupe"
+      },
+
+      "debouches": [
+        "Gestion de la production des imprimés ",
+        "Responsable en autonomie dans les ateliers ",
+        "Domaine des communications graphiques ",
+        "Ateliers d'Impression Finition "
+      ],
+
+      "competences": [
+        "Renseigner le dossier de fabrication ",
+        "Préparer et réaliser l'impression",
+        "Entretenir le matériel d'impression ",
+        "Préparer le matériel de façonnage ",
+        "Effectuer le façonnage",
+        "Maintenir les matériels de façonnage "
+      ],
+
+      "logiciels": [
+        "Outils de paramétrage de presse offset ",
+        "Techniques de colorimétrie ",
+        "Imposition et forme imprimante ",
+        "Systèmes de gestion de production "
+      ],
+
+      "langues": [
+        "Arabe ",
+        "Français ",
+        "Anglais technique "
+      ],
+
+      "heures": {
+        "total": 2027.0
+      },
+
+      "annees": [
+        {
+          "annee": 1,
+          "modules_generaux": [
+            {"nom": "Arabe", "duree": 20.0},
+            {"nom": "Français", "duree": 115.0},
+            {"nom": "Anglais technique", "duree": 50.0},
+            {"nom": "Culture entrepreneuriale", "duree": 30.0},
+            {"nom": "Compétences comportementales", "duree": 30.0, "cite": "90"},
+            {"nom": "Culture et techniques intermédiaires du numérique", "duree": 40.0, "cite": "90"}
+          ],
+          "modules_techniques": [
+            {"nom": "Entrepreneuriat-PIE 1", "duree": 72.0, "cite": "90"},
+            {"nom": "Métier et formation en imprimerie", "duree": 15.0, "cite": "90"},
+            {"nom": "Etude du dossier de fabrication en impression", "duree": 80.0, "cite": "90"},
+            {"nom": "Finalisation de la forme imprimante", "duree": 75.0, "cite": "90"},
+            {"nom": "Préparation et paramétrage de la presse offset", "duree": 150.0, "cite": "90"},
+            {"nom": "Etude des matériaux", "duree": 75.0, "cite": "90"},
+            {"nom": "Colorimétrie", "duree": 55.0, "cite": "90"},
+            {"nom": "Pratique du massicot", "duree": 75.0, "cite": "90"},
+            {"nom": "Assurance qualité", "duree": 45.0, "cite": "90"},
+            {"nom": "Santé et sécurité en imprimerie", "duree": 30.0, "cite": "90"}
+          ]
+        },
+        {
+          "annee": 2,
+          "modules_generaux": [
+            {"nom": "Français", "duree": 115.0, "cite": "98"},
+            {"nom": "Anglais technique", "duree": 50.0, "cite": "98"},
+            {"nom": "Culture entrepreneuriale", "duree": 45.0, "cite": "98"},
+            {"nom": "Compétences comportementales", "duree": 30.0, "cite": "98"},
+            {"nom": "Culture et techniques intermédiaires du numérique", "duree": 30.0, "cite": "98"}
+          ],
+          "modules_techniques": [
+            {"nom": "Conduite d'une presse offset à éléments multiple", "duree": 140.0, "cite": "98"},
+            {"nom": "Pratique de la plieuse", "duree": 70.0, "cite": "98"},
+            {"nom": "Réglage et conduite des chaînes encarteuses", "duree": 25.0, "cite": "98"},
+            {"nom": "Techniques de maintenance", "duree": 100.0, "cite": "98"},
+            {"nom": "Intégration en milieu de travail", "duree": 185.0, "cite": "98"}
+          ]
+        }
+      ]
+    }
+  ]
+}

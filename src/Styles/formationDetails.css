@@ -1,0 +1,381 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.details-container {
+    background: #fafafa;
+     
+  margin: 0 auto;
+  padding: 100px 100px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-left: 5px solid #F7AD19;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  color: #053F5C;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e8;
+  transition: all 0.2s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Section Titles */
+.section-title {
+  color: #053F5C;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F7AD19;
+  display: inline-block;
+}
+
+/* Lists */
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 8px 0;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.list-label {
+  font-weight: 600;
+  color: #429EBD;
+  margin-right: 8px;
+}
+
+/* Modules Grid */
+.modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.module-tag {
+  background: #9FE7F5;
+  color: #053F5C;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.module-tag:hover {
+  background: #429EBD;
+  color: white;
+  cursor: default;
+}
+
+/* Duration Stats */
+.duration-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.duration-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.duration-item:last-child {
+  border-bottom: none;
+}
+
+.duration-label {
+  font-weight: 600;
+  color: #429EBD;
+}
+
+.duration-value {
+  color: #053F5C;
+  font-weight: 500;
+  background: #f5f5f5;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Loading & Not Found */
+.loading-container,
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.loading-text,
+.not-found-text {
+  font-size: 1.2rem;
+  color: #053F5C;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #F7AD19;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 20px 15px;
+  }
+  
+  .header-section {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .info-card {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .module-tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+/* Tables Styles */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 25px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e8;
+}
+
+.modules-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.modules-table:last-child {
+  margin-bottom: 0;
+}
+
+.modules-table thead tr {
+  background: linear-gradient(135deg, #053F5C 0%, #0a5a7e 100%);
+  border-bottom: 2px solid #F7AD19;
+}
+
+.modules-table th {
+  padding: 12px 15px;
+  text-align: left;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.modules-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.modules-table tbody tr:hover {
+  background-color: #faf9f5;
+  transform: translateX(2px);
+}
+
+.modules-table td {
+  padding: 10px 15px;
+  color: #555;
+}
+
+.modules-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Year Buttons Styles */
+.year-buttons-container {
+  margin: 20px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.year-button {
+  background: white;
+  border: 2px solid #e8e8e8;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #053F5C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.year-button:hover {
+  border-color: #F7AD19;
+  background: #fff9ef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.year-button.active {
+  background: #F7AD19;
+  border-color: #F7AD19;
+  color: #053F5C;
+  box-shadow: 0 2px 8px rgba(247, 173, 25, 0.2);
+}
+
+/* Table Section Headers */
+.table-section-title {
+  color: #053F5C;
+  font-size: 1.2rem;
+  margin: 20px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F7AD19;
+  display: inline-block;
+}
+
+.table-subtitle {
+  color: #429EBD;
+  font-size: 1rem;
+  margin: 15px 0 12px;
+  font-weight: 600;
+}
+
+/* Alternative table style for simple tables */
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.simple-table thead tr {
+  background: #f8f9fa;
+  border-bottom: 2px solid #F7AD19;
+}
+
+.simple-table th {
+  padding: 12px 15px;
+  text-align: left;
+  color: #053F5C;
+  font-weight: 600;
+}
+
+.simple-table td {
+  padding: 10px 15px;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.simple-table tbody tr:hover {
+  background-color: #faf9f5;
+}
+
+/* Responsive Table Styles */
+@media (max-width: 768px) {
+  .table-responsive {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .modules-table th,
+  .modules-table td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .year-button {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .year-buttons-container {
+    gap: 8px;
+    margin: 15px 0 20px;
+  }
+  
+  .table-section-title {
+    font-size: 1rem;
+    margin: 15px 0 10px;
+  }
+  
+  .modules-table {
+    font-size: 0.85rem;
+  }
+}
