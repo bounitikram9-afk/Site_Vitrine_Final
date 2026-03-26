@@ -17,8 +17,12 @@ const Contact = () => {
     style.textContent = `
       .contact-section {
         padding: 5rem 0;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 50%, #e8eaf6 100%);
+        background-color: #b3d2f35c; 
       }
+        .titre {
+          margin: 0 auto;
+          font-family: Arial, sans-serif;
+        }
       
       .contact-header-icon {
         width: 64px;
@@ -209,11 +213,15 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="container">
         {/* Header */}
-        <div className="text-center mb-5">
-          <h2 className="display-4 fw-bold mb-3">Contactez-nous</h2>
+
+
+        <div className="titre text-center mb-5">
+              <div className="text-center mb-5">
+                <h1 className="title display-4 fw-bold mb-3">Contactez-nous</h1>
           <p className="lead text-muted">
             Une question, un problème ou besoin d'aide ? Notre équipe est là pour vous répondre rapidement.
           </p>
+              </div>
         </div>
 
         <div className="row g-4">

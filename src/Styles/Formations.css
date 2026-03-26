@@ -1,5 +1,3 @@
-/* Formations.css - Style simple */
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
 }
 
 .formations-container {
- background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 50%, #e8eaf6 100%);
+  background-color: #b3d2f35c; 
   margin: 0 auto;
  
   padding: 40px 100px;
@@ -38,10 +36,10 @@
   border-radius: 8px;
   
   transition: all 0.3s ease;
-    display: inline-block; /* كتخلي الكارد تاخد قياس المحتوى فقط */
+    display: inline-block; 
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* باش الصورة ما تخرجش على الجناب المنحنية */
+    overflow: hidden; 
   
 }
 .card-content{
@@ -110,9 +108,18 @@
 
 
   .card img {
-    display: block; /* كتحيد الفراغ الصغير اللي كيكون لتحت */
+    display: block; 
     max-width: 100%; 
     height: auto;
+  }
+  .lien{
+     text-decoration: none;
+      transform: translateY(-2px);
+      cursor: pointer;
+  }
+  .lien2{
+    font-size: 19px;
+    color: #429EBD;
   }
 
 
