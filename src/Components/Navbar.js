@@ -12,12 +12,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg fixed-top " style={{background:"#053F5C"}}>
-        <div className="container">
+        <div className="container  ">
 
         
-           <Link className="navbar-brand text-white fw-bold d-flex" to="/">
-            <h4 style={{color:"#F7AD19"}}>IS</h4>
-            <h4 style={{color:"white"}}>AG</h4>
+          <Link className="navbar-brand d-flex align-items-center" to="/">
+           <img className="logo" src="/images/image.png" />
           </Link>
 
           

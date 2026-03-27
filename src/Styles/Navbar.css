@@ -1,6 +1,19 @@
 
 
 
+
+
+
+
+.navbar {
+  height: 80px;           /* حجم ثابت للـ navbar */
+  overflow: hidden;       /* يمنع الصورة تكبرها */
+}
+
+.logo {
+  height: 150px;          /* الصورة كبيرة كيف بغيتي */
+  width: auto;
+}
 .side-menu{
   position: fixed;
   top:0;
