@@ -13,10 +13,9 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg fixed-top" style={{ background: "#053F5C" }}>
         <div className="container">
-          {/* Logo */}
-          <Link className="navbar-brand text-white fw-bold d-flex" to="/" onClick={closeMenu}>
-            <h4 style={{ color: "#F7AD19", margin: 0 }}>IS</h4>
-            <h4 style={{ color: "white", margin: 0 }}>AG</h4>
+          {/* Logo - I used the Image version as it looks more professional for ISAG */}
+          <Link className="navbar-brand d-flex align-items-center" to="/" onClick={closeMenu}>
+            <img className="logo" src="/images/image.png" alt="ISAG Logo" style={{ height: "40px" }} />
           </Link>
 
           {/* Hamburger Button for Mobile */}
@@ -27,7 +26,7 @@ const Navbar = () => {
             ☰
           </button>
 
-          {/* Desktop Links (Visible only on Large screens) */}
+          {/* Desktop Links */}
           <div className="collapse navbar-collapse d-none d-lg-block">
             <ul className="navbar-nav ms-auto d-flex align-items-center gap-4">
               <li className="nav-item">
