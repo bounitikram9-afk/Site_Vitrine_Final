@@ -7,7 +7,6 @@
 .formations-container {
   background-color: #b3d2f35c; 
   margin: 0 auto;
- 
   padding: 40px 100px;
   font-family: Arial, sans-serif;
 }
@@ -28,7 +27,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
+  justify-content: center;
 }
+
 
 .card {
   background: white;
@@ -41,6 +42,12 @@
     border-radius: 8px;
     overflow: hidden; 
   
+}
+
+.card img {
+  width: 100%;
+  height: 220px; 
+  object-fit: cover;
 }
 .card-content{
     padding: 20px;

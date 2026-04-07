@@ -1,3 +1,4 @@
+/* 
 
 .hero-section {
  position: relative;
@@ -55,4 +56,114 @@ color: #ffffff;
 @keyframes fadeIn {
   from { opacity: 0; transform: translateX(-20px); }
   to { opacity: 1; transform: translateX(0); }
+}
+ */
+
+
+ .hero-section {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(3, 3, 3, 0.4) 100%); 
+   /* url('/images/home.jpg');  */
+
+   /* background-image: url('/images/home.jpg'); */
+   /* background-image: url('https://localhost:3000/images/home.jpg'); */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.badge-top {
+  background: #da950b;
+  color: #053F5C;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.text-highlight {
+  color: #eea108;
+}
+
+.description {
+  color: #e0e0e0 !important; 
+  max-width: 600px;
+  line-height:2.9em;
+}
+
+
+.hero-btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+}
+
+.main-btn {
+  background-color: #eea108;
+  color: #071f2f;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #ffffff !important;
+  color: #ffffff;
+}
+
+.hero-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  filter: brightness(1.1);
+}
+
+
+.floating-img {
+  max-width: 80%;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  animation: floatAnim 4s ease-in-out infinite;
+}
+.contact{
+  color: white;
+}
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+
+.animate-fade-in {
+  animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 80px;
+  }
+  .description {
+    margin: 0 auto 30px auto;
+  }
+  .d-flex.gap-3 {
+    justify-content: center;
+    flex-direction: column;
+  }
 }

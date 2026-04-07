@@ -1,4 +1,4 @@
-/* كيحيد أي فراغ مخبي بين الـ sections */
+
 main {
   display: flex;
   flex-direction: column;
@@ -7,5 +7,5 @@ main {
 
 section {
   margin: 0 !important;
-  padding: 0; /* أو حدد padding-top فقط */
+  padding: 0; 
 }

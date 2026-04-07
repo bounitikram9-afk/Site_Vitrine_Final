@@ -14,7 +14,10 @@ import Actualités from './pages/Actualites';
 function App() {
   return (
     <div className="App">
-      <Toaster position="top-right" richColors />
+      <Toaster position="top-right" richColors 
+      toastOptions={{
+          style: { padding: '20px', borderRadius: '12px' },
+        }}/>
       <Navbar /> 
       
       <Routes>

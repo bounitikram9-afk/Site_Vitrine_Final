@@ -23,15 +23,10 @@ const About = () => {
               </p>
             </div>
                   <img   src="/images/isagc-principal.jpg"  alt="isag"  className="main-image" />  
-            
-
-
-
           </div>
         </div>
       </section>
 
-      {/* Institut Spécialisé des Arts Graphiques */}
       <section >
         <div className="">
           <div className="institut-content">

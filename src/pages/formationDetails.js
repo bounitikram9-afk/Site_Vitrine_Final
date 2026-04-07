@@ -36,11 +36,11 @@ function FormationDetails() {
     <div className="details-container">
       <div className="header-section">
         <h1 className="title">{formation.filiere}</h1>
-        <p className="description">{formation.description}</p>
+        <p className="description text-dark">{formation.description}</p>
       </div>
 
       <div className="content-grid">
-        {/* Conditions */}
+        
         <div className="info-card">
           <h2 className="section-title">Conditions d'admission</h2>
           <ul className="info-list">
@@ -50,25 +50,19 @@ function FormationDetails() {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Débouchés */}
+        </div>      
         <div className="info-card">
           <h2 className="section-title"> Débouchés</h2>
           <ul className="info-list">
             {formation.debouches.map((d, i) => <li key={i}>{d}</li>)}
           </ul>
-        </div>
-
-        {/* Compétences */}
+        </div>     
         <div className="info-card">
           <h2 className="section-title"> Compétences acquises</h2>
           <ul className="info-list">
             {formation.competences.map((c, i) => <li key={i}>{c}</li>)}
           </ul>
         </div>
-
-        {/* Logiciels */}
         <div className="info-card">
           <h2 className="section-title"> Logiciels utilisés</h2>
           <ul className="info-list">
@@ -99,7 +93,7 @@ function FormationDetails() {
           </div>
         </div>
       </div>
-        {/* Year Buttons */}
+      
 <div className="year-buttons-container">
   {formation.annees.map(a => (
     <button 

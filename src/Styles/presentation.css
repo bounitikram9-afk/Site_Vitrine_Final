@@ -5,12 +5,9 @@ section {
 
 .page {
   /* background:#eaedf1; */
+
    background-color: #b3d2f35c; 
-  
-  
 }
-
-
 .hero-content {
   display: flex;
   align-items: center;

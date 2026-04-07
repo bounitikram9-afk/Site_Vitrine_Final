@@ -96,7 +96,7 @@
       "id": 2,
       "filiere": "Infographie",
       "diplome": "Technicien Spécialisé",
-      "duree": "4 semestres",
+      "duree": "2 ans",
       "image": "/images/infographie.jpg",
       "description": "Le Technicien Spécialisé en Infographie est un professionnel chargé de réaliser des produits de prépresse destinés à l'impression et à l'édition. Il travaille les couleurs, les typographies, les images et les mises en pages pour exprimer une identité ou faire passer une idée.",
       "conditions": {
@@ -181,7 +181,7 @@
       "id": 3,
       "filiere": "Production Graphique",
       "diplome": "Technicien Spécialisé",
-      "duree": "2 ans (4 semestres)",
+      "duree": "2 ans",
       "image": "/images/production-graphique.jpg",
       "description": "Le Technicien Spécialisé en Production Graphique est un professionnel possédant les compétences requises pour prendre en charge les tâches telles que la conduite des presses offset, le contrôle de qualité, la reliure, l'estimation, la production et la finition.",
 
@@ -273,7 +273,7 @@
   "filiere": "Digital Design - Option : UI Designer",
   "diplome": "Technicien Spécialisé",
   "duree": "2 ans",
-  "image": "/images/ui.png",
+  "image": "/images/digital-desgin.jpg",
   "description": "Le UI Designer est le professionnel chargé du lien entre la machine et l'homme. Il s'occupe de la conception générale de l'interface, de la clarté de la navigation, de l'optimisation des parcours et de la qualité des contenus.",
   "conditions": {
     "niveau": "Bacheliers Scientifiques ou Techniques",
