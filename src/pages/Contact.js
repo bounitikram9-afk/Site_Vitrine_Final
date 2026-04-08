@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Mail, Phone, MapPin, Send, MessageCircle, User, Clock, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle, User, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import "bootstrap/dist/css/bootstrap.min.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Contact = () => {
     subject: "",
     message: ""
   });
+  const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
   
@@ -23,7 +25,6 @@ const Contact = () => {
           margin: 0 auto;
           font-family: Arial, sans-serif;
         }
-      
       .contact-header-icon {
         width: 64px;
         height: 64px;
@@ -35,7 +36,6 @@ const Contact = () => {
         margin: 0 auto 1.5rem;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
       }
-      
       .contact-card {
         background: white;
         border-radius: 1rem;
@@ -44,11 +44,9 @@ const Contact = () => {
         transition: box-shadow 0.3s ease;
         height: 100%;
       }
-      
       .contact-card:hover {
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
       }
-      
       .info-icon {
         width: 48px;
         height: 48px;
@@ -58,19 +56,15 @@ const Contact = () => {
         justify-content: center;
         flex-shrink: 0;
       }
-      
       .info-icon.blue {
         background: #dbeafe;
       }
-      
       .info-icon.indigo {
         background: #e0e7ff;
       }
-      
       .info-icon.purple {
         background: #f3e8ff;
       }
-      
       .gradient-card {
         background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
         border-radius: 1rem;
@@ -78,14 +72,12 @@ const Contact = () => {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         color: white;
       }
-      
       .form-card {
         background: white;
         border-radius: 1rem;
         padding: 3rem 2.5rem;
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
       }
-      
       .form-label {
         display: flex;
         align-items: center;
@@ -94,12 +86,10 @@ const Contact = () => {
         font-weight: 500;
         color: #374151;
       }
-      
       .form-control:focus {
         border-color: #3b82f6;
         box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
       }
-      
       .btn-gradient {
         background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
         border: none;
@@ -115,13 +105,11 @@ const Contact = () => {
         gap: 0.5rem;
         width: 100%;
       }
-      
       .btn-gradient:hover {
         background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         transform: scale(1.02);
       }
-      
       .faq-card {
         padding: 1rem;
         border: 2px solid #e5e7eb;
@@ -130,51 +118,41 @@ const Contact = () => {
         text-decoration: none;
         display: block;
       }
-      
       .faq-card:hover {
         border-color: #3b82f6;
         background: #eff6ff;
       }
-      
       .faq-card h4 {
         font-weight: 500;
         color: #111827;
         margin-bottom: 0.25rem;
         font-size: 1rem;
       }
-      
       .faq-card:hover h4 {
         color: #2563eb;
       }
-      
       .faq-card p {
         font-size: 0.875rem;
         color: #6b7280;
         margin: 0;
       }
-      
       .additional-info {
         margin-top: 2rem;
         padding-top: 2rem;
         border-top: 1px solid #e5e7eb;
       }
-      
       .text-blue-600 {
         color: #2563eb;
       }
-      
       .text-indigo-600 {
         color: #4f46e5;
       }
-      
       .text-purple-600 {
         color: #9333ea;
       }
-      
       .text-blue-100 {
         color: #dbeafe;
       }
-      
       .text-green-600 {
         color: #16a34a;
       }
@@ -196,34 +174,52 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
-    toast.success("Message envoyé avec succès !", {
-      description: "Nous vous répondrons dans les plus brefs délais.",
-    });
+    if (formData.message.length < 10) {
+      toast.error("Le message doit contenir au moins 10 caractères.");
+      return;
+    }
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+    const serviceID = "service_4kyuysn"; 
+    const templateID = "template_r2zlp1l"; 
+    const publicKey = "zChAJUcsmhh-cdWT6";  
+
+    const templateParams = {
+      nom: formData.name,
+      email: formData.email,
+      sujet: formData.subject, 
+      message: formData.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        toast.success("Message envoyé avec succès !", {
+          description: "Nous vous répondrons dans les plus brefs délais.",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch((err) => {
+        console.error("Erreur EmailJS:", err);
+        toast.error("Erreur lors de l'envoi du message.");
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
     <section id="contact" className="contact-section">
       <div className="container">
         {/* Header */}
-
-
         <div className="titre text-center mb-5">
-              <div className="text-center mb-5">
-                <h1 className="title display-4 fw-bold mb-3">Contactez-nous</h1>
-          <p className="lead text-muted">
-            Une question, un problème ou besoin d'aide ? Notre équipe est là pour vous répondre rapidement.
-          </p>
-              </div>
+          <div className="text-center mb-5">
+            <h1 className="title display-4 fw-bold mb-3">Contactez-nous</h1>
+            <p className="lead text-muted">
+              Une question, un problème ou besoin d'aide ? Notre équipe est là pour vous répondre rapidement.
+            </p>
+          </div>
         </div>
-
         <div className="row g-4">
           {/* Contact Info Cards */}
           <div className="col-lg-4">
@@ -238,17 +234,13 @@ const Contact = () => {
                     <div>
                       <h3 className="h5 fw-bold mb-2">Email</h3>
                       <p className="text-muted small mb-3">Envoyez-nous un email</p>
-                      <a 
-                        href="mailto:support@volontaction.fr"
-                        className="text-blue-600 fw-medium text-decoration-none"
-                      >
+                      <a href="mailto:support@volontaction.fr" className="text-blue-600 fw-medium text-decoration-none" >
                         contact@ofppt.ma
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-
               {/* Phone Card */}
               <div className="col-12">
                 <div className="contact-card">
@@ -269,7 +261,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
               {/* Address Card */}
               <div className="col-12">
                 <div className="contact-card">
@@ -288,7 +279,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
               {/* Localisation Card */}
               <div className="col-12 mt-4">
                 <div className="contact-card p-0 overflow-hidden d-flex flex-column" style={{ minHeight: '300px' }}>
@@ -307,7 +297,6 @@ const Contact = () => {
                       Voir sur Google Maps
                     </a>
                   </div>
-                  
                   <div className="flex-grow-1">
                     <iframe
                       title="Google Map"
@@ -321,16 +310,12 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
-
           {/* Contact Form */}
           <div className="col-lg-8">
             <div className="form-card">
               <h3 className="h3 fw-bold mb-4">Envoyez-nous un message</h3>
-
               <form onSubmit={handleSubmit}>
                 {/* Name */}
                 <div className="mb-4">
@@ -349,7 +334,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-
                 {/* Email */}
                 <div className="mb-4">
                   <label htmlFor="email" className="form-label">
@@ -367,7 +351,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-
                 {/* Subject */}
                 <div className="mb-4">
                   <label htmlFor="subject" className="form-label">
@@ -385,7 +368,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-
                 {/* Message */}
                 <div className="mb-4">
                   <label htmlFor="message" className="form-label">
@@ -404,14 +386,12 @@ const Contact = () => {
                   ></textarea>
                   <div className="form-text">Minimum 10 caractères</div>
                 </div>
-
                 {/* Submit Button */}
                 <button type="submit" className="btn btn-primary btn-gradient">
                   <Send size={20} />
                   Envoyer le message
                 </button>
               </form>
-
               {/* Additional Info */}
               <div className="additional-info">
                 <div className="d-flex gap-3 text-muted small">

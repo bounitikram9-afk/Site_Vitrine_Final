@@ -36,7 +36,7 @@ function FormationDetails() {
     <div className="details-container">
       <div className="header-section">
         <h1 className="title">{formation.filiere}</h1>
-        <p className="description">{formation.description}</p>
+        <p className="description text-dark">{formation.description}</p>
       </div>
 
       <div className="content-grid">

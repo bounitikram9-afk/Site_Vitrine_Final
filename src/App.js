@@ -43,8 +43,16 @@ function App() {
 
   return (
     <div className="App">
-      <Toaster position="top-right" richColors />
+      {/* Fusion : On garde le style personnalisé du Toaster ET le ScrollToSection */}
+      <Toaster 
+        position="top-right" 
+        richColors 
+        toastOptions={{
+          style: { padding: '20px', borderRadius: '12px' },
+        }}
+      />
       <ScrollToSection /> 
+
       <Navbar /> 
       
       <Routes>

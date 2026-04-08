@@ -1,15 +1,65 @@
+// import React from 'react';
+// import '../Styles/Home.css';
+// import { Link } from 'react-router-dom';
+
+// const Hero = () => {
+ 
+//   const sectionStyle = {
+//     backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(3, 3, 3, 0.4) 100%), url('/images/home.jpg')`,
+//     backgroundSize: 'cover',
+//     backgroundPosition: 'center'
+//   };
+
+//   return (
+//     <section style={sectionStyle} className="hero-section">
+//       <div className="container">
+//         <div className="row">
+//           <div className="col-12 col-md-8 animate-fade-in">
+//             <h1 className="display-3 fw-bold mb-4">
+//               Bienvenue à l’ISAG Casablanca <br /> 
+//               <span className="isag-subtext">Institut Spécialisé des Arts Graphiques</span>
+//             </h1>
+//             <p className="lead mb-5 description">
+//               Développez vos compétences en design graphique et en techniques d’impression
+//             </p>
+//             <div className="d-flex gap-3">
+//               <button className="btn-lg rounded-pill hero-btn">
+//                 Contacter
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+
+//   );
+// };
+
+// export default Hero;
+
+
+
+
+
+
+
+
+
 import React from 'react';
 import '../Styles/Home.css';
 import { Link } from 'react-router-dom';
-
 const Hero = () => {
- 
-  const sectionStyle = {
-    backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(3, 3, 3, 0.4) 100%), url('/images/home.jpg')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
-  };
 
+    const sectionStyle = {
+      backgroundImage: "url('/images/home.jpg')", 
+      backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.2)), url('/images/home.jpg')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      minHeight: '100vh',
+      width: '100%',
+      display: 'flex',
+      position: 'relative'
+    };
   return (
     <section 
       className="hero-section d-flex align-items-center" 
