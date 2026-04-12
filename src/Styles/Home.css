@@ -8,14 +8,29 @@
 /* Had l-media query hiya li ghadi t-gadd tswira bach tban kamla */
 @media (max-width: 768px) {
   .hero-section {
-    background-size: contain !important; /* Hadi hiya li kat-jme3 tswira kamla */
-    background-position: top center !important; /* Kat-hbet tswira bach l-office t-ban */
-    background-color: #053F5C !important; /* L-lon dyal l-office bach mat-ban-ch l-khwa */
+    /* هادا هو السر باش تبان التصويرة كاملة بلا ما تـزومـا */
+    background-size: 100% auto !important; 
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
     
-    min-height: 65vh !important; 
-    padding-top: 180px !important; /* Kat-hbet l-ktaba bach mat-ghatich l-logo d l-office */
+    /* كنبدلو اللون ديال الخلفية باش يجي متناسق مع التصويرة لي تجمعات */
+    background-color: #053F5C !important; 
+
+    /* كنهبطو الكتيبة شوية باش متغطيش على اللوغو لي في التصويرة */
+    padding-top: 160px !important; 
+    min-height: 70vh !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .display-3 {
+    font-size: 1.4rem !important; /* كنصغرو العنوان باش يبقى ليسباس للتصويرة */
+    line-height: 1.2 !important;
+  }
+
+  .description {
+    font-size: 0.85rem !important;
+    max-width: 90% !important;
   }
 }
