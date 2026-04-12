@@ -87,32 +87,38 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    /* Forcer l-image t-ji f l-wast b dabet f l-portable */
     background-position: center center !important; 
     text-align: center;
-    padding-top: 50px;
-    min-height: 70vh !important; /* N9ssi chwiya men l-tool f l-mobile */
+    /* Hna knti derti 100px 15px bla ma t-swbiha mzyan */
+    padding: 100px 15px !important; 
+    min-height: 70vh !important;
   }
 
   .display-3 {
-    font-size: 2.2rem !important; /* Sghri l-ktaba bach tswira t-ban ktr */
+    /* Hada darori y-tsgher bach tswira t-ban */
+    font-size: 1.8rem !important; 
     margin-top: 20px;
+    line-height: 1.2;
   }
 
   .description {
     margin: 0 auto 30px auto;
-    line-height: 1.6em !important; /* N9ssi men had l-espace kbir */
-    font-size: 0.95rem;
+    line-height: 1.4em !important; 
+    font-size: 0.9rem !important;
   }
 
   .d-flex.gap-3 {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
+    gap: 15px !important;
   }
 
   .hero-btn {
-    width: 90%; /* Bach les boutons y-jiw m9adin f l-portable */
-    margin-bottom: 10px;
+    width: 100% !important; 
+    /* Hna knti derti margin-bottom: 100% hadi ghada t-hrreb lik kolchi */
+    margin-bottom: 10px; 
+    font-size: 0.9rem !important;
+    padding: 12px !important;
   }
 }

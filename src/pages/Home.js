@@ -5,16 +5,16 @@ import '../Styles/Home.css';
 import { Link } from 'react-router-dom';
 const Hero = () => {
 
-    const sectionStyle = {
-  backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.2)), url('/images/home.jpg')`,
+const sectionStyle = {
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/home.jpg')`,
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'scroll', // Darori f l-mobile
   minHeight: '100vh',
   width: '100%',
   display: 'flex',
-  position: 'relative',
-  backgroundAttachment: 'scroll' 
+  alignItems: 'center'
 };
   return (
     <section 
