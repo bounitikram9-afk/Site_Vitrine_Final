@@ -17,7 +17,7 @@ const Home = () => {
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
       backgroundColor: '#053F5C',
-      // '48vh' hwa l-irtifa' li khlliti f tswira l-khra
+      
       minHeight: isMobile ? '48vh' : '100vh',
       display: 'flex',
       alignItems: 'center',
@@ -25,7 +25,7 @@ const Home = () => {
       width: '100%',
     },
     contentContainer: {
-      // Had l-Padding hwa li ghadi i-habbat l-3onwan chwiya l-teht f mobile
+      
       paddingTop: isMobile ? '80px' : '0', 
     },
     title: {
@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <section style={styles.heroSection}>
-      {/* Zdna had l-style hna bach i-hbat l-3onwan */}
+      
       <div className="container text-center text-white px-4" style={styles.contentContainer}>
         <h1 style={styles.title}>
           Bienvenue à <span style={{ color: '#eea108' }}>l'ISAG</span> Casablanca
