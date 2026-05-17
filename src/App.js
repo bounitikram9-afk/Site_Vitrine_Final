@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Formations from './pages/formations';
 import FormationDetails from './pages/formationDetails';
 import Actualités from './pages/Actualites';
+import ActualiteDetails from './pages/ActualiteDetails';
 import './Styles/App.css';
 
 const ScrollToSection = () => {
@@ -61,6 +62,7 @@ function App() {
         <Route path="/about" element={MainPage} />
         <Route path="/formations" element={MainPage} />
         <Route path="/actualites" element={MainPage} />
+        <Route path="/actualites/:id" element={<ActualiteDetails />} />
         <Route path="/contact" element={MainPage} />
 
         <Route path="/formations/:id" element={<FormationDetails />} />
